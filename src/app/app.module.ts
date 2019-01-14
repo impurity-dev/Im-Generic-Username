@@ -8,6 +8,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import {appRoutes} from './app.routes';
+import { GamesPageComponent } from './components/games-page/games-page.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import {appRoutes} from './app.routes';
     HeaderComponent,
     FooterComponent,
     LandingPageComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    GamesPageComponent
   ],
   imports: [
     BrowserModule,
