@@ -29,7 +29,9 @@
             "scripts": [
               "./node_modules/jquery/dist/jquery.min.js",
               "./node_modules/bootstrap/dist/js/bootstrap.js"
-            ]
+            ],
+            "baseHref": "/Im-Generic-Username/",
+            "deployUrl": "/Im-Generic-Username/"
           },
           "configurations": {
             "production": {
