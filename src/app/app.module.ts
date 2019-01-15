@@ -1,15 +1,14 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
-import {LocationStrategy, HashLocationStrategy} from '@angular/common';
-
-import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/header/header.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { LandingPageComponent } from './components/landing-page/landing-page.component';
-import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {RouterModule} from '@angular/router';
+import {HashLocationStrategy, LocationStrategy} from '@angular/common';
+import {AppComponent} from './app.component';
+import {HeaderComponent} from './components/header/header.component';
+import {FooterComponent} from './components/footer/footer.component';
+import {LandingPageComponent} from './components/landing-page/landing-page.component';
+import {PageNotFoundComponent} from './components/page-not-found/page-not-found.component';
 import {appRoutes} from './app.routes';
-import { GamesPageComponent } from './components/games-page/games-page.component';
+import {GamesPageComponent} from './components/games-page/games-page.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +25,7 @@ import { GamesPageComponent } from './components/games-page/games-page.component
       appRoutes, {enableTracing: true}
     )
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
