@@ -26,7 +26,7 @@ import { GamesPageComponent } from './components/games-page/games-page.component
       appRoutes, {enableTracing: true}
     )
   ],
-  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

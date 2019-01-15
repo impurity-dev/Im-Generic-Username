@@ -18,7 +18,7 @@ install:
 
 script:
   - yarn lint
-  - yarn build --base-href https://tmk2003.github.io/Im-Generic-Username/
+  - yarn build --prod --base-href https://tmk2003.github.io/Im-Generic-Username/
 deploy:
   provider: pages
   skip_cleanup: true
