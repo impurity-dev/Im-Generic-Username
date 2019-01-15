@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import {LocationStrategy, HashLocationStrategy} from '@angular/common';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -22,14 +23,10 @@ import { GamesPageComponent } from './components/games-page/games-page.component
   imports: [
     BrowserModule,
     RouterModule.forRoot(
-      appRoutes,
-      {
-        enableTracing: true, // <-- debugging purposes only
-        useHash: true
-      }
+      appRoutes, {enableTracing: true}
     )
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
