@@ -23,7 +23,10 @@ import { GamesPageComponent } from './components/games-page/games-page.component
     BrowserModule,
     RouterModule.forRoot(
       appRoutes,
-      { enableTracing: true } // <-- debugging purposes only
+      {
+        enableTracing: true, // <-- debugging purposes only
+        useHash: true
+      }
     )
   ],
   providers: [],
