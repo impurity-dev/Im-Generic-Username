@@ -8,6 +8,39 @@
   background-color: #232323;
 }
 
+.background-secondary-green-1 {
+  background-color: #2cfc42;
+}
+
+.background-secondary-green-2 {
+  background-color: #0eeb6f;
+}
+
+.background-secondary-green-3 {
+  background-color: #11b187;
+}
+
+.background-secondary-green-4 {
+  background-color: #11847f;
+}
+
+.background-secondary-green-5 {
+  background-color: #0d3f4d;
+}
+
+.background-secondary-green-6 {
+  background-color: #08182b;
+}
+
+.background-secondary-green-7 {
+  background-color: #03050f;
+}
+
+/* Gradients */
+.background-gradient-green-1 {
+  background-color: #2cfc42;
+  background-image: linear-gradient(to bottom right, #0eeb6f, #11b187);
+}
 
 /* Colors */
 .foreground-white {
