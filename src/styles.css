@@ -1,7 +1,13 @@
-/* Colors */
-.background-primary-dark {
+/* Background Colors */
+
+.background-primary-dark-1 {
+  background-color: #131313;
+}
+
+.background-primary-dark-2 {
   background-color: #232323;
 }
+
 
 /* Colors */
 .foreground-white {
