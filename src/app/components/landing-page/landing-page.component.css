@@ -46,3 +46,8 @@
   height: 20px;
   width: 20px;
 }
+
+#buffer-line {
+  border-radius: 2px;
+  border: 3px solid #0eeb6f;
+}
