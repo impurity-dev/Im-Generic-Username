@@ -32,6 +32,11 @@
   width: 100vw;
 }
 
+#landing-page-wrapper {
+  background-image: url("../../../assets/images/background/Arcade.jpg");
+  background-size: 100%;
+}
+
 #viewer-icon {
   height: 25px;
   width: 25px;
