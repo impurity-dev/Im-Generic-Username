@@ -22,6 +22,12 @@
   background: #0eeb6f;
 }
 
+#watch-live-button:active {
+  cursor: pointer;
+  opacity: 0.65;
+  background: #0eeb6f;
+}
+
 .stats-container {
   border-radius: 5px;
   background:#0eeb6f;
@@ -34,7 +40,8 @@
 
 #landing-page-wrapper {
   background-image: url("../../../assets/images/background/Arcade.jpg");
-  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #viewer-icon {
