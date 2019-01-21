@@ -10,12 +10,6 @@ import {PageNotFoundComponent} from './components/page-not-found/page-not-found.
 import {appRoutes} from './app.routes';
 import {GamesPageComponent} from './components/games-page/games-page.component';
 import { FlaticonCreditComponent } from './components/flaticon-credit/flaticon-credit.component';
-import { HomeIconComponent } from './components/header/home-icon/home-icon.component';
-import { TwitchIconComponent } from './components/header/twitch-icon/twitch-icon.component';
-import { TwitterIconComponent } from './components/header/twitter-icon/twitter-icon.component';
-import { GameIconComponent } from './components/header/game-icon/game-icon.component';
-import { DonationIconComponent } from './components/header/donation-icon/donation-icon.component';
-import { MailIconComponent } from './components/header/mail-icon/mail-icon.component';
 
 @NgModule({
   declarations: [
@@ -26,17 +20,11 @@ import { MailIconComponent } from './components/header/mail-icon/mail-icon.compo
     PageNotFoundComponent,
     GamesPageComponent,
     FlaticonCreditComponent,
-    HomeIconComponent,
-    TwitchIconComponent,
-    TwitterIconComponent,
-    GameIconComponent,
-    DonationIconComponent,
-    MailIconComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(
-      appRoutes, {enableTracing: true}
+      appRoutes
     )
   ],
   providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
