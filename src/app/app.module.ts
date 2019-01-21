@@ -11,6 +11,7 @@ import { GamesPageComponent } from './components/games-page/games-page.component
 import { HeaderComponent } from './components/header/header.component';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { NavItemComponent } from './components/header/nav-item/nav-item.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
     PageNotFoundComponent,
     GamesPageComponent,
     FlaticonCreditComponent,
+    NavItemComponent,
   ],
   imports: [
     BrowserModule,

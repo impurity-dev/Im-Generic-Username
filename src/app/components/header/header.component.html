@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
   <!-- Brand -->
-  <a class="navbar-brand navbar-animation" routerLink="/">Im Generic Username 1</a>
+  <span class="navbar-brand">Im Generic Username 1</span>
 
   <!-- Toggler -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -11,61 +11,28 @@
   <!-- Right Hand Links -->
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
+
       <!-- Home -->
-      <li class="nav-item mr-3">
-        <a class="nav-link navbar-animation" routerLink="/">
-          <img id="home-icon" src="assets/images/home/Home_White.svg" alt="Home Icon" />
-          <span class="d-lg-none ml-2">Home</span>
-        </a>
-      </li>
+      <app-nav-item src="assets/images/home/Home_White.svg" alt="House Icon" href="/" title="Home"></app-nav-item>
 
       <!-- Twitch -->
-      <li class="nav-item mr-3">
-        <a class="nav-link navbar-animation" href="https://www.twitch.tv/imgenericusername1">
-          <img id="twitch-icon" src="assets/images/twitch/Twitch_White.svg" alt="Twitch Icon" />
-          <span class="d-lg-none ml-2">Twitch</span>
-        </a>
-      </li>
+      <app-nav-item src="assets/images/twitch/Twitch_White.svg" alt="Twitch Icon" href="https://www.twitch.tv/imgenericusername1" title="Twitch"></app-nav-item>
 
       <!-- Dicord -->
-      <li class="nav-item mr-3">
-        <a class="nav-link navbar-animation" href="https://discord.gg/HBwYvA8">
-          <img id="twitch-icon" src="assets/images/discord/Discord_White.svg" alt="Discord Icon" />
-          <span class="d-lg-none ml-2">Discord</span>
-        </a>
-      </li>
+      <app-nav-item src="assets/images/discord/Discord_White.svg" alt="Discord Icon" href="https://discord.gg/HBwYvA8" title="Discord"></app-nav-item>
 
       <!-- Twitter -->
-      <li class="nav-item mr-3">
-        <a class="nav-link navbar-animation" href="/">
-          <img id="twitter-icon" src="assets/images/twitter/Twitter_White.svg" alt="Twitter Icon" />
-          <span class="d-lg-none ml-2">Twitter</span>
-        </a>
-      </li>
+      <!-- TODO: Add correct twitter link -->
+      <app-nav-item src="assets/images/twitter/Twitter_White.svg" alt="Twitter Icon" href="/" title="Twitter"></app-nav-item>
 
       <!-- Games -->
-      <li class="nav-item mr-3">
-        <a class="nav-link navbar-animation" routerLink="/games">
-          <img id="game-icon" src="assets/images/games/Controller_White.svg" alt="Game Icon" />
-          <span class="d-lg-none ml-2">Game List</span>
-        </a>
-      </li>
+      <app-nav-item src="assets/images/games/Controller_White.svg" alt="Controller Icon" href="/games" title="Game List"></app-nav-item>
 
       <!-- Donation -->
-      <li class="nav-item mr-3">
-          <a class="nav-link navbar-animation" href="https://streamlabs.com/imgenericusername1">
-            <img id="game-icon" src="assets/images/donation/Heart_White.svg" alt="Heart Icon" />
-            <span class="d-lg-none ml-2">Donations</span>
-          </a>
-      </li>
+      <app-nav-item src="assets/images/donation/Heart_White.svg" alt="Heart Icon" href="https://streamlabs.com/imgenericusername1" title="Donations"></app-nav-item>
 
       <!-- Contact -->
-      <li class="nav-item mr-3">
-        <a class="nav-link navbar-animation" routerLink="/">
-          <img id="game-icon" src="assets/images/contact/Mail_White.svg" alt="Mail Icon" />
-          <span class="d-lg-none ml-2">Contact Me</span>
-        </a>
-      </li>
+      <app-nav-item src="assets/images/contact/Mail_White.svg" alt="Mail Icon" href="/" title="Contact Me"></app-nav-item>
 
     </ul>
   </div>
