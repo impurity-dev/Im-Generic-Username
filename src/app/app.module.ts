@@ -11,7 +11,8 @@ import { GamesPageComponent } from './components/games-page/games-page.component
 import { HeaderComponent } from './components/header/header.component';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
-import { NavItemComponent } from './components/header/nav-item/nav-item.component';
+import { NavItemRemoteComponent } from './components/header/nav-item-remote/nav-item-remote.component';
+import { NavItemLocalComponent } from './components/header/nav-item-local/nav-item-local.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { NavItemComponent } from './components/header/nav-item/nav-item.componen
     PageNotFoundComponent,
     GamesPageComponent,
     FlaticonCreditComponent,
-    NavItemComponent,
+    NavItemRemoteComponent,
+    NavItemLocalComponent
   ],
   imports: [
     BrowserModule,
