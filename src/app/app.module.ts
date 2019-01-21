@@ -1,15 +1,16 @@
-import {BrowserModule} from '@angular/platform-browser';
-import {NgModule} from '@angular/core';
-import {RouterModule} from '@angular/router';
-import {HashLocationStrategy, LocationStrategy} from '@angular/common';
-import {AppComponent} from './app.component';
-import {HeaderComponent} from './components/header/header.component';
-import {FooterComponent} from './components/footer/footer.component';
-import {LandingPageComponent} from './components/landing-page/landing-page.component';
-import {PageNotFoundComponent} from './components/page-not-found/page-not-found.component';
-import {appRoutes} from './app.routes';
-import {GamesPageComponent} from './components/games-page/games-page.component';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
+import { AppComponent } from './app.component';
+import { appRoutes } from './app.routes';
 import { FlaticonCreditComponent } from './components/flaticon-credit/flaticon-credit.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { GamesPageComponent } from './components/games-page/games-page.component';
+import { HeaderComponent } from './components/header/header.component';
+import { LandingPageComponent } from './components/landing-page/landing-page.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { FlaticonCreditComponent } from './components/flaticon-credit/flaticon-c
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     RouterModule.forRoot(
       appRoutes
     )
