@@ -11,7 +11,7 @@ import { Observable } from 'rxjs';
 export class LandingPageComponent implements OnInit {
 
   private _channelName: String = 'imgenericusername1';
-  protected _viewCount: number;
+  public _viewCount: number;
 
   constructor(private _twitchService: TwitchService) { }
 
