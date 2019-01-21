@@ -46,3 +46,15 @@
 .foreground-white {
   color: white;
 }
+
+.greyed-out-font {
+  color: #919191;
+}
+
+.greyed-out-link {
+  color: #919191;
+}
+
+.greyed-out-link:hover {
+  color: white;
+}
