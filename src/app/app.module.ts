@@ -14,6 +14,7 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { NavItemRemoteComponent } from './components/header/nav-item-remote/nav-item-remote.component';
 import { NavItemLocalComponent } from './components/header/nav-item-local/nav-item-local.component';
 import { ReferalPageComponent } from './components/referal-page/referal-page.component';
+import { GameItemComponent } from './components/games-page/game-item/game-item.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ReferalPageComponent } from './components/referal-page/referal-page.com
     FlaticonCreditComponent,
     NavItemRemoteComponent,
     NavItemLocalComponent,
-    ReferalPageComponent
+    ReferalPageComponent,
+    GameItemComponent
   ],
   imports: [
     BrowserModule,
