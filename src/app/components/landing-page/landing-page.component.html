@@ -32,10 +32,7 @@
 
           <!-- Views -->
           <div class="stats-container mx-sm-2 col-lg-2 col-md-3 col-sm-4 col-xs-5 col-12">
-            <div class="row">
-              <img id="viewer-icon" class="mx-2" src="assets/images/viewers/Eye_White.svg" alt="Eye icon" />
-              <span class="mx-auto">{{ _twitchUser.view_count }}</span>
-            </div>
+            <app-view-count></app-view-count>
           </div>
 
           <!-- Buffer on small viewport -->
@@ -43,10 +40,7 @@
 
           <!-- Followers -->
           <div class="stats-container mx-sm-2 col-lg-2 col-md-3 col-sm-4 col-xs-5 col-12">
-            <div class="row">
-              <img id="follower-icon" class="my-auto mx-2" src="assets/images/followers/Person_White.svg" alt="Person icon" />
-              <span class="mx-auto">{{ _twitchTotalFollowers }}</span>
-            </div>
+            <app-follower-count></app-follower-count>
           </div>
 
           <!-- Gutter -->

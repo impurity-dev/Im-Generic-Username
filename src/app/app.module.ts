@@ -15,6 +15,8 @@ import { NavItemRemoteComponent } from './components/header/nav-item-remote/nav-
 import { NavItemLocalComponent } from './components/header/nav-item-local/nav-item-local.component';
 import { ReferalPageComponent } from './components/referal-page/referal-page.component';
 import { GameItemComponent } from './components/games-page/game-item/game-item.component';
+import { ViewCountComponent } from './components/landing-page/view-count/view-count.component';
+import { FollowerCountComponent } from './components/landing-page/follower-count/follower-count.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { GameItemComponent } from './components/games-page/game-item/game-item.c
     NavItemRemoteComponent,
     NavItemLocalComponent,
     ReferalPageComponent,
-    GameItemComponent
+    GameItemComponent,
+    ViewCountComponent,
+    FollowerCountComponent
   ],
   imports: [
     BrowserModule,
