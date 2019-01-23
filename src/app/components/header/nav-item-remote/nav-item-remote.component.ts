@@ -10,4 +10,5 @@ export class NavItemRemoteComponent {
   @Input() href: string;
   @Input() alt: string;
   @Input() title: string;
+  @Input() class: string;
 }
