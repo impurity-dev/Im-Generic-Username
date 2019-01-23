@@ -10,7 +10,7 @@ import { Observable } from 'rxjs';
 })
 export class ViewCountComponent implements OnInit {
 
-  protected _twitchUser$: Observable<TwitchUser>;
+  public _twitchUser$: Observable<TwitchUser>;
 
   constructor(private _twitchService: TwitchService) { }
 
