@@ -5,7 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { appRoutes } from './app.routes';
-import { FlaticonCreditComponent } from './components/flaticon-credit/flaticon-credit.component';
+import { FlaticonCreditComponent } from './components/footer/flaticon-credit/flaticon-credit.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { GamesPageComponent } from './components/games-page/games-page.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -18,6 +18,7 @@ import { GameItemComponent } from './components/games-page/game-item/game-item.c
 import { ViewCountComponent } from './components/landing-page/view-count/view-count.component';
 import { FollowerCountComponent } from './components/landing-page/follower-count/follower-count.component';
 import { StreamActivityComponent } from './components/landing-page/stream-activity/stream-activity.component';
+import { DeveloperCreditComponent } from './components/footer/developer-credit/developer-credit.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { StreamActivityComponent } from './components/landing-page/stream-activi
     GameItemComponent,
     ViewCountComponent,
     FollowerCountComponent,
-    StreamActivityComponent
+    StreamActivityComponent,
+    DeveloperCreditComponent
   ],
   imports: [
     BrowserModule,
