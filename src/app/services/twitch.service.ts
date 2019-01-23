@@ -3,6 +3,7 @@ import { TwitchUser } from '../models/twitch-user';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { TwitchFollower } from '../models/twitch-follower';
+import { StreamerConstants } from '../constants/streamer-constants';
 
 /**
  * Twitch service to interact with twitch data
@@ -23,25 +24,22 @@ export class TwitchService {
 
   /**
    * Get the twitch user
-   * @param channelName Channel name that we are trying to get the user for
    */
-  public getUser(channelName: String): Observable<TwitchUser> {
-    return this._http.get<TwitchUser>(this.BASE_URL + 'user?channelName=' + channelName);
+  public getUser(): Observable<TwitchUser> {
+    return this._http.get<TwitchUser>(this.BASE_URL + 'user?channelName=' + StreamerConstants.CHANNEL_NAME);
   }
 
   /**
    * Get the twitch followers
-   * @param channelName Channel name that we are trying to get the followers for
    */
-  public getRecentFollowers(channelName: String): Observable<TwitchFollower[]> {
-    return this._http.get<TwitchFollower[]>(this.BASE_URL + 'recent/followers?channelName=' + channelName);
+  public getRecentFollowers(): Observable<TwitchFollower[]> {
+    return this._http.get<TwitchFollower[]>(this.BASE_URL + 'recent/followers?channelName=' + StreamerConstants.CHANNEL_NAME);
   }
 
   /**
    * Get the twitch follower total
-   * @param channelName Channel name that we are trying to get the follower total for
    */
-  public getTotalFollowers(channelName: String): Observable<number> {
-    return this._http.get<number>(this.BASE_URL + 'total/followers?channelName=' + channelName);
+  public getTotalFollowers(): Observable<number> {
+    return this._http.get<number>(this.BASE_URL + 'total/followers?channelName=' + StreamerConstants.CHANNEL_NAME);
   }
 }

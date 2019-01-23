@@ -9,13 +9,12 @@ import { Observable } from 'rxjs';
 })
 export class FollowerCountComponent implements OnInit {
 
-  private _channelName: String = 'imgenericusername1';
   public _twitchTotalFollowers$: Observable<number>;
 
   constructor(private _twitchService: TwitchService) { }
 
   ngOnInit() {
     // Grab the Twitch Followers
-    this._twitchTotalFollowers$ = this._twitchService.getTotalFollowers(this._channelName);
+    this._twitchTotalFollowers$ = this._twitchService.getTotalFollowers();
   }
 }
