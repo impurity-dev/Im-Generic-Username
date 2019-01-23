@@ -2,3 +2,13 @@
   width: 25px;
   height: 25px;
 }
+
+#navbar-wrapper {
+  background: transparent;
+}
+
+@media only screen and (max-width: 992px) {
+  #navbar-wrapper {
+    background-color: #131313;
+  }
+}
