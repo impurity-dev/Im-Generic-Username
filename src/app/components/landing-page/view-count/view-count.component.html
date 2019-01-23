@@ -1,6 +1,10 @@
-<div class="row">
+<div class="row" *ngIf="(_twitchUser$ | async) as twitchUser; else userLoading">
   <span class="mx-auto">
     <img id="viewer-icon" class="mx-2" src="assets/images/viewers/Eye_White.svg" alt="Eye icon" />
-    {{ _viewCount }}
+    {{ twitchUser.view_count }}
   </span>
 </div>
+
+<ng-template #userLoading>
+  <img height="25px" src="assets/images/loaders/Double_Ring.svg" alt="Load Spinner" />
+</ng-template>

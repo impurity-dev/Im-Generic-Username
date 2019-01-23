@@ -1,0 +1,54 @@
+<svg id="loading-svg" width="250" height="250" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+
+  <path id="loading-line-1" d="M25,50 a1,1 0 0,0 50,0" stroke-width="2px" fill="none" stroke="black">
+  <animateTransform
+            attributeName="transform"
+            type="rotate"
+            from="0 50 50"
+            to="360 50 50"
+            dur="1s"
+            repeatCount="indefinite"/>
+  </path>
+
+  <path id="loading-line-2" d="M25,50 a1,1 0 0,0 50,0" stroke-width="3px" fill="none" stroke="white">
+  <animateTransform
+            attributeName="transform"
+            type="rotate"
+            from="360 50 50"
+            to="0 50 50"
+            dur="1s"
+            repeatCount="indefinite"/>
+  </path>
+
+  <path id="loading-line-3" d="M30,50 a1,1 0 0,0 40,0" stroke-width="2px" fill="none" stroke="black">
+  <animateTransform
+            attributeName="transform"
+            type="rotate"
+            from="360 50 50"
+            to="0 50 50"
+            dur="1s"
+            repeatCount="indefinite"/>
+  </path>
+
+  <path id="loading-line-4" d="M30,50 a1,1 0 0,0 40,0" stroke-width="5px" fill="none" stroke="white">
+  <animateTransform
+            attributeName="transform"
+            type="rotate"
+            from="0 50 50"
+            to="360 50 50"
+            dur="1s"
+            repeatCount="indefinite"/>
+  </path>
+
+  <circle id="loading-circle" cx="50" cy="50" r="50" fill="black" stroke="white" linejoin="round" stoke-width="2px">
+        <animate
+             attributeName="r"
+             begin="0s"
+             calcMode="spline"
+             keySplines="0.3 0 0.7 1;0.3 0 0.7 1"
+             values="0;15;0"
+             keyTimes="0;0.5;1"
+             dur="2s"
+             repeatCount="indefinite"/>
+    </circle>
+</svg>

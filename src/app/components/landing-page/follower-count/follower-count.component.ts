@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TwitchService } from 'src/app/services/twitch.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-follower-count',
@@ -9,18 +10,12 @@ import { TwitchService } from 'src/app/services/twitch.service';
 export class FollowerCountComponent implements OnInit {
 
   private _channelName: String = 'imgenericusername1';
-  public _twitchTotalFollowers: number;
+  public _twitchTotalFollowers$: Observable<number>;
 
   constructor(private _twitchService: TwitchService) { }
 
   ngOnInit() {
     // Grab the Twitch Followers
-    this._twitchService.getTotalFollowers(this._channelName)
-      .subscribe(
-        twitchTotalFollowers => {
-          this._twitchTotalFollowers = twitchTotalFollowers;
-        }
-      );
-
+    this._twitchTotalFollowers$ = this._twitchService.getTotalFollowers(this._channelName);
   }
 }
