@@ -17,6 +17,7 @@ import { ReferalPageComponent } from './components/referal-page/referal-page.com
 import { GameItemComponent } from './components/games-page/game-item/game-item.component';
 import { ViewCountComponent } from './components/landing-page/view-count/view-count.component';
 import { FollowerCountComponent } from './components/landing-page/follower-count/follower-count.component';
+import { StreamActivityComponent } from './components/landing-page/stream-activity/stream-activity.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { FollowerCountComponent } from './components/landing-page/follower-count
     ReferalPageComponent,
     GameItemComponent,
     ViewCountComponent,
-    FollowerCountComponent
+    FollowerCountComponent,
+    StreamActivityComponent
   ],
   imports: [
     BrowserModule,
