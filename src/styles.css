@@ -58,3 +58,8 @@
 .greyed-out-link:hover {
   color: white;
 }
+
+/* Alignment */
+.below-nav-bar-wrapper {
+  padding-top: 65px;
+}

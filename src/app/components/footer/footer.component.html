@@ -1,7 +1,28 @@
-<div class="greyed-out-font fixed-bottom container-fluid">
-  <div class="row">
-      <app-flaticon-credit class="col-md-7 col-7"></app-flaticon-credit>
-      <div class="col-md-3 col-2"></div>
-      <app-developer-credit class="col-md-2 col-3"></app-developer-credit>
+<div *ngIf="_currentUrl != '/home'; else staticFooter">
+  <div class="background-primary-dark-1">
+    <div class="container-fluid py-3">
+      <div class="row">
+        <div class="col">
+          <h4>Explore</h4>
+        </div>
+        <div class="col">
+          <h4>Contact</h4>
+        </div>
+        <div class="col">
+          <h4>Support</h4>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
+
+<!-- Static Footer -->
+<ng-template #staticFooter>
+  <div class="greyed-out-font fixed-bottom container-fluid">
+    <div class="row">
+        <app-flaticon-credit class="col-md-7 col-7"></app-flaticon-credit>
+        <div class="col-md-3 col-2"></div>
+        <app-developer-credit class="col-md-2 col-3"></app-developer-credit>
+    </div>
+  </div>
+</ng-template>
