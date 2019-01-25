@@ -1,41 +1,40 @@
 <div *ngIf="_currentUrl != '/home'; else staticFooter">
   <div class="background-primary-dark-1">
-    <div class="container-fluid pt-2">
+    <div class="container-fluid pt-3">
 
       <!-- Text and Links -->
       <div id="footer-section-wrapper" class="row">
         <div class="col text-center">
           <span><b>Im Generic Username 1</b></span>
-          <ul class="list-unstyled pt-1">
-              <li><a>Link 1</a></li>
-              <li><a>Link 1</a></li>
-              <li><a>Link 1</a></li>
-              <li><a>Link 1</a></li>
-            </ul>
+          <div class="foreground-primary-dark-3">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
         </div>
         <div class="col text-center pt-1">
           <span><b>Explore</b></span>
           <ul class="list-unstyled">
               <li><a class="greyed-out-link" routerLink="/home">Home</a></li>
+              <li><a class="greyed-out-link" routerLink="/about">About Me</a></li>
               <li><a class="greyed-out-link" routerLink="/games">Game List</a></li>
             </ul>
         </div>
         <div class="col text-center pt-1">
           <span><b>Connect</b></span>
           <ul class="list-unstyled">
-              <li><a>Steam</a></li>
-              <li><a>Link 1</a></li>
-              <li><a>Link 1</a></li>
-              <li><a>Link 1</a></li>
+              <li><a class="greyed-out-link" href="https://www.twitch.tv/imgenericusername1">Twitch</a></li>
+              <li><a class="greyed-out-link" href="https://steamcommunity.com/id/ChadChangles/">Steam</a></li>
+              <li><a class="greyed-out-link" href="https://www.reddit.com/r/IMGeneric">Reddit</a></li>
+              <li><a class="greyed-out-link" href="https://www.snapchat.com/add/snap_chad">Snapchat</a></li>
+              <li><a class="greyed-out-link" href="https://twitter.com/GenericIm">Twitter</a></li>
+              <li><a class="greyed-out-link" href="https://discord.gg/tAfvqgF">Discord</a></li>
             </ul>
         </div>
         <div class="col text-center pt-1">
           <span><b>Support</b></span>
           <ul class="list-unstyled">
-              <li><a>Link 1</a></li>
-              <li><a>Link 1</a></li>
-              <li><a>Link 1</a></li>
-              <li><a>Link 1</a></li>
+              <li><a class="greyed-out-link" href="https://streamlabs.com/imgenericusername1">Streamer</a></li>
+              <li><a class="greyed-out-link" href="https://streamlabs.com/x7impurity7x">Developer</a></li>
+              <li><a class="greyed-out-link" href="https://github.com/tmk2003/Im-Generic-Username/issues">Feature Request</a></li>
             </ul>
         </div>
       </div>
@@ -44,7 +43,7 @@
       <hr class="background-primary-dark-2 m-0" />
 
       <!-- Copyright -->
-      <div class="foreground-primary-dark-3 container-fluid">
+      <div class="foreground-primary-dark-3 container-fluid py-3">
         <div class="row">
           <div class="col">
             <span>&copy; <span property="dc:dateCopyrighted">2019 </span><span property="dc:publisher">Tyler Kokoszka</span></span>
