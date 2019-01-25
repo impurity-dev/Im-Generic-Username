@@ -1,6 +1,8 @@
 <div *ngIf="_currentUrl != '/home'; else staticFooter">
   <div class="background-primary-dark-1">
-    <div class="container-fluid py-5">
+    <div class="container-fluid pt-2">
+
+      <!-- Text and Links -->
       <div id="footer-section-wrapper" class="row">
         <div class="col text-center">
           <span><b>Im Generic Username 1</b></span>
@@ -14,16 +16,14 @@
         <div class="col text-center pt-1">
           <span><b>Explore</b></span>
           <ul class="list-unstyled">
-              <li><a>Link 1</a></li>
-              <li><a>Link 1</a></li>
-              <li><a>Link 1</a></li>
-              <li><a>Link 1</a></li>
+              <li><a class="greyed-out-link" routerLink="/home">Home</a></li>
+              <li><a class="greyed-out-link" routerLink="/games">Game List</a></li>
             </ul>
         </div>
         <div class="col text-center pt-1">
           <span><b>Connect</b></span>
           <ul class="list-unstyled">
-              <li><a>Link 1</a></li>
+              <li><a>Steam</a></li>
               <li><a>Link 1</a></li>
               <li><a>Link 1</a></li>
               <li><a>Link 1</a></li>
@@ -37,6 +37,21 @@
               <li><a>Link 1</a></li>
               <li><a>Link 1</a></li>
             </ul>
+        </div>
+      </div>
+
+      <!-- Horizontal Rule -->
+      <hr class="background-primary-dark-2 m-0" />
+
+      <!-- Copyright -->
+      <div class="foreground-primary-dark-3 container-fluid">
+        <div class="row">
+          <div class="col">
+            <span>&copy; <span property="dc:dateCopyrighted">2019 </span><span property="dc:publisher">Tyler Kokoszka</span></span>
+          </div>
+          <div class="col">
+            <span class="float-right">Powered by Impurity</span>
+          </div>
         </div>
       </div>
     </div>

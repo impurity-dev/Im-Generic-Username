@@ -8,6 +8,10 @@
   background-color: #232323;
 }
 
+.background-primary-dark-3 {
+  background-color: #919191;
+}
+
 .background-secondary-green-1 {
   background-color: #2cfc42;
 }
@@ -36,6 +40,19 @@
   background-color: #03050f;
 }
 
+/* Foreground Colors */
+.foreground-primary-dark-1 {
+  color: #131313;
+}
+
+.foreground-primary-dark-2 {
+  color: #232323;
+}
+
+.foreground-primary-dark-3 {
+  color: #919191;
+}
+
 /* Gradients */
 .background-gradient-green-1 {
   background-color: #2cfc42;
@@ -51,6 +68,7 @@
   color: #919191;
 }
 
+/* Links */
 .greyed-out-link {
   color: #919191;
 }
