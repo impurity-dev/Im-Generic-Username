@@ -36,7 +36,7 @@ import { DeveloperCreditComponent } from './components/footer/developer-credit/d
     ViewCountComponent,
     FollowerCountComponent,
     StreamActivityComponent,
-    DeveloperCreditComponent
+    DeveloperCreditComponent,
   ],
   imports: [
     BrowserModule,
