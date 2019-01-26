@@ -1,10 +1,16 @@
 <div class="below-nav-bar-wrapper container-fluid">
   <div class="row">
     <div class="col container-fluid text-center">
-        <h1 class="pt-3">Game List</h1> <!-- TODO: Make fancy -->
-        <ul class="list-unstyled">
-          <app-game-item *ngFor="let game of games" title="{{game}}"></app-game-item>
-        </ul>
+        <!-- TODO: Make fancy -->
+        <h1 class="pt-3">Game List</h1>
+
+        <div class="container-flex">
+
+          <div class="row" *ngFor="let gameRow of games">
+            <app-game-item *ngFor="let game of gameRow" class="col" title="{{game}}"></app-game-item>
+          </div>
+        </div>
     </div>
+
   </div>
 </div>
