@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
-import { TwitchUser } from '../models/twitch-user';
+import { TwitchUser } from '../../models/twitch-user';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
-import { TwitchFollower } from '../models/twitch-follower';
-import { StreamerConstants } from '../constants/streamer-constants';
-import { environment } from '../../environments/environment';
+import { TwitchFollower } from '../../models/twitch-follower';
+import { StreamerConstants } from '../../constants/streamer-constants';
+import { environment } from '../../../environments/environment';
 
 /**
  * Twitch service to interact with twitch data
