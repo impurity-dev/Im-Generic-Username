@@ -1,0 +1,7 @@
+.game-item {
+  border-width: 10px;
+}
+
+.game-item:hover {
+  background: #353535;
+}

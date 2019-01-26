@@ -53,6 +53,19 @@
   color: #919191;
 }
 
+/* Border Colors */
+.border-primary-dark-1 {
+  border-color: #131313;
+}
+
+.border-primary-dark-2 {
+  border-color: #232323;
+}
+
+.border-primary-dark-3 {
+  border-color: #919191;
+}
+
 /* Gradients */
 .background-gradient-green-1 {
   background-color: #2cfc42;
