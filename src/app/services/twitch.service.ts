@@ -14,6 +14,8 @@ import { environment } from '../../environments/environment';
 })
 export class TwitchService {
 
+  private BASE_ROUTE = 'twitch/';
+
   /**
    * Create our service with http client
    * @param _http HttpClient to perform restful calls with
@@ -25,7 +27,7 @@ export class TwitchService {
    */
   public getUser(): Observable<TwitchUser> {
     return this._http.get<TwitchUser>(
-      environment.twitchWebIntegratorUrl + 'user?channelName=' + StreamerConstants.CHANNEL_NAME
+      environment.twitchWebIntegratorUrl + this.BASE_ROUTE + 'user?channelName=' + StreamerConstants.CHANNEL_NAME
       );
   }
 
@@ -34,7 +36,7 @@ export class TwitchService {
    */
   public getRecentFollowers(): Observable<TwitchFollower[]> {
     return this._http.get<TwitchFollower[]>(
-      environment.twitchWebIntegratorUrl + 'recent/followers?channelName=' + StreamerConstants.CHANNEL_NAME
+      environment.twitchWebIntegratorUrl + this.BASE_ROUTE + 'followers/recent?channelName=' + StreamerConstants.CHANNEL_NAME
       );
   }
 
@@ -43,7 +45,7 @@ export class TwitchService {
    */
   public getTotalFollowers(): Observable<number> {
     return this._http.get<number>(
-      environment.twitchWebIntegratorUrl + 'total/followers?channelName=' + StreamerConstants.CHANNEL_NAME
+      environment.twitchWebIntegratorUrl + this.BASE_ROUTE + 'followers/total?channelName=' + StreamerConstants.CHANNEL_NAME
     );
   }
 }
