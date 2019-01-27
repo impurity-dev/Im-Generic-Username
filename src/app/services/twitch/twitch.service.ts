@@ -27,7 +27,7 @@ export class TwitchService {
    */
   public getUser(): Observable<TwitchUser> {
     return this._http.get<TwitchUser>(
-      environment.twitchWebIntegratorUrl + this.BASE_ROUTE + 'user?channelName=' + StreamerConstants.CHANNEL_NAME
+      environment.twitchWebIntegratorUrl + this.BASE_ROUTE + 'user/' + StreamerConstants.CHANNEL_NAME
       );
   }
 
@@ -36,7 +36,7 @@ export class TwitchService {
    */
   public getRecentFollowers(): Observable<TwitchFollower[]> {
     return this._http.get<TwitchFollower[]>(
-      environment.twitchWebIntegratorUrl + this.BASE_ROUTE + 'followers/recent?channelName=' + StreamerConstants.CHANNEL_NAME
+      environment.twitchWebIntegratorUrl + this.BASE_ROUTE + 'followers/' + StreamerConstants.CHANNEL_NAME + '/recent'
       );
   }
 
@@ -45,7 +45,7 @@ export class TwitchService {
    */
   public getTotalFollowers(): Observable<number> {
     return this._http.get<number>(
-      environment.twitchWebIntegratorUrl + this.BASE_ROUTE + 'followers/total?channelName=' + StreamerConstants.CHANNEL_NAME
+      environment.twitchWebIntegratorUrl + this.BASE_ROUTE + 'followers/' + StreamerConstants.CHANNEL_NAME + '/total'
     );
   }
 }
