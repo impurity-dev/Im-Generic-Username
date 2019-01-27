@@ -1,19 +1,21 @@
 <div class="below-nav-bar-wrapper container-fluid">
   <div class="row">
     <div class="col container-fluid text-center">
-        <!-- TODO: Make fancy -->
-        <h1 class="pt-3">Game List</h1>
+      <!-- TODO: Make fancy -->
+      <h1 class="pt-3">Game List</h1>
 
-        <div class="container-flex">
-
-        <div *ngIf="_games$ | async as games; else gameLibraryLoading">
+      <div *ngIf="_games$ | async as games; else gameLibraryLoading">
+        <ul class="list-inline">
           <app-game-item
           *ngFor="let game of games"
-          class="col" name="{{ game.name }}"></app-game-item>
-        </div>
-
+          appId="{{ game.appId }}"
+          name="{{ game.name }}"
+          playtimeForever="{{ game.playtimeForever }}"
+          imgIconUrl="{{ game.imgIconUrl }}"
+          imgLogoUrl="{{ game.imgLogoUrl }}"
+          ></app-game-item>
+        </ul>
       </div>
-    </div>
   </div>
 </div>
 

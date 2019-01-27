@@ -1,3 +1,7 @@
-<div class="game-item text-center border-primary-dark-3">
-  <span>{{ name }}</span>
-</div>
+<li *ngIf="!hasBrokenImage" class="list-inline-item game-item mx-2 my-1">
+  <div class="container-fluid">
+    <a href="#" data-toggle="tooltip">
+      <img class="row" src="{{ imgLogoUrl }}" alt="{{ name }} icon" (error)="imageNotFound()"/>
+    </a>
+  </div>
+</li>
