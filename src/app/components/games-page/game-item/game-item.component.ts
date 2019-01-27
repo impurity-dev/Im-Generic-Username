@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { SteamGame } from 'src/app/models/steam/steam-game';
 
 @Component({
   selector: 'app-game-item',
@@ -6,5 +7,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./game-item.component.css']
 })
 export class GameItemComponent {
-  @Input() public title: string;
+  @Input() public name: string;
 }

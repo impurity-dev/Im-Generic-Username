@@ -1,8 +1,8 @@
 export class SteamGame {
-  public appid: number;
-  public name: string;
-  public playtimeForver: number;
+  public appId: number;
+  public hasCommunityVisibleStats: boolean;
   public imgIconUrl: string;
   public imgLogoUrl: string;
-  public hasCommunityVisibleStats: boolean;
+  public name: string;
+  public playtimeForever: number;
 }
