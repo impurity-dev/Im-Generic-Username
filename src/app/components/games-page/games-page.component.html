@@ -1,10 +1,23 @@
 <div class="below-nav-bar-wrapper container-fluid">
   <div class="row">
-    <div class="col">
-        <h1>Game List:</h1>
-        <ul>
-          <app-game-item *ngFor="let game of games" title="{{game}}"></app-game-item>
-        </ul>
+    <div class="col container-fluid text-center">
+        <!-- TODO: Make fancy -->
+        <h1 class="pt-3">Game List</h1>
+
+        <div class="container-flex">
+
+        <div *ngIf="_games$ | async as games; else gameLibraryLoading">
+          <app-game-item
+          *ngFor="let game of games"
+          class="col" name="{{ game.name }}"></app-game-item>
+        </div>
+
+      </div>
     </div>
   </div>
 </div>
+
+<ng-template #gameLibraryLoading>
+  <img height="75px" src="assets/images/loaders/Double_Ring.svg" alt="Load Spinner" />
+</ng-template>
+

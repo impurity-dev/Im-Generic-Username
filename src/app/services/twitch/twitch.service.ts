@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
-import { TwitchUser } from '../models/twitch-user';
+import { TwitchUser } from '../../models/twitch/twitch-user';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
-import { TwitchFollower } from '../models/twitch-follower';
-import { StreamerConstants } from '../constants/streamer-constants';
-import { environment } from '../../environments/environment';
+import { TwitchFollower } from '../../models/twitch/twitch-follower';
+import { StreamerConstants } from '../../constants/streamer-constants';
+import { environment } from '../../../environments/environment';
 
 /**
  * Twitch service to interact with twitch data
@@ -13,6 +13,8 @@ import { environment } from '../../environments/environment';
   providedIn: 'root'
 })
 export class TwitchService {
+
+  private BASE_ROUTE = 'twitch/';
 
   /**
    * Create our service with http client
@@ -25,7 +27,7 @@ export class TwitchService {
    */
   public getUser(): Observable<TwitchUser> {
     return this._http.get<TwitchUser>(
-      environment.twitchWebIntegratorUrl + 'user?channelName=' + StreamerConstants.CHANNEL_NAME
+      environment.twitchWebIntegratorUrl + this.BASE_ROUTE + 'user/' + StreamerConstants.CHANNEL_NAME
       );
   }
 
@@ -34,7 +36,7 @@ export class TwitchService {
    */
   public getRecentFollowers(): Observable<TwitchFollower[]> {
     return this._http.get<TwitchFollower[]>(
-      environment.twitchWebIntegratorUrl + 'recent/followers?channelName=' + StreamerConstants.CHANNEL_NAME
+      environment.twitchWebIntegratorUrl + this.BASE_ROUTE + 'followers/' + StreamerConstants.CHANNEL_NAME + '/recent'
       );
   }
 
@@ -43,7 +45,7 @@ export class TwitchService {
    */
   public getTotalFollowers(): Observable<number> {
     return this._http.get<number>(
-      environment.twitchWebIntegratorUrl + 'total/followers?channelName=' + StreamerConstants.CHANNEL_NAME
+      environment.twitchWebIntegratorUrl + this.BASE_ROUTE + 'followers/' + StreamerConstants.CHANNEL_NAME + '/total'
     );
   }
 }

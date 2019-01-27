@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TwitchService } from 'src/app/services/twitch.service';
+import { TwitchService } from 'src/app/services/twitch/twitch.service';
 import { Observable } from 'rxjs';
 
 @Component({
