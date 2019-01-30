@@ -1,4 +1,8 @@
-<div id="stream-activity-wrapper">
-  <span id="stream-activity">Im Generic Username is streaming: </span>
-  <span><img height="50px" src="assets/images/loaders/Double_Ring.svg" alt="Load Spinner" /></span>
+<div id="stream-activity-wrapper" *ngIf="(_twitchStream$ | async) as twitchStream; else streamActivityLoading">
+  <h1>IMGenericUsername1 is Live! </h1>
+  <h4>Currently Streaming: {{ twitchStream.title }}</h4>
 </div>
+
+<ng-template #streamActivityLoading>
+    <span><img height="50px" src="assets/images/loaders/Double_Ring.svg" alt="Load Spinner" /></span>
+</ng-template>
