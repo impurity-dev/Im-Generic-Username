@@ -5,6 +5,7 @@ import { HttpClient } from '@angular/common/http';
 import { TwitchFollower } from '../../models/twitch/twitch-follower';
 import { StreamerConstants } from '../../constants/streamer-constants';
 import { environment } from '../../../environments/environment';
+import { TwitchStream } from 'src/app/models/twitch/twitch-stream';
 
 /**
  * Twitch service to interact with twitch data
@@ -28,7 +29,16 @@ export class TwitchService {
   public getUser(): Observable<TwitchUser> {
     return this._http.get<TwitchUser>(
       environment.twitchWebIntegratorUrl + this.BASE_ROUTE + 'user/' + StreamerConstants.CHANNEL_NAME
-      );
+    );
+  }
+
+  /**
+   * Get the twitch users stream
+   */
+  public getStream(): Observable<TwitchStream> {
+    return this._http.get<TwitchStream>(
+      environment.twitchWebIntegratorUrl + this.BASE_ROUTE + 'stream/' + StreamerConstants.CHANNEL_NAME
+    );
   }
 
   /**
@@ -37,7 +47,7 @@ export class TwitchService {
   public getRecentFollowers(): Observable<TwitchFollower[]> {
     return this._http.get<TwitchFollower[]>(
       environment.twitchWebIntegratorUrl + this.BASE_ROUTE + 'followers/' + StreamerConstants.CHANNEL_NAME + '/recent'
-      );
+    );
   }
 
   /**
